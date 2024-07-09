@@ -6,7 +6,7 @@ This repository contains the official Pytorch implementation of training & evalu
 
 ## Installation
 
-For install and data preparation, please refer to the guidelines in MMSegmentation v0.13.0.
+For install and data preparation, please refer to the guidelines in [MMSegmentation v0.13.0](https://github.com/open-mmlab/mmsegmentation/tree/v0.13.0).
 
 Other requirements:
 ```pip install timm==0.3.2```
