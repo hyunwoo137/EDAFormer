@@ -2,7 +2,7 @@ _base_ = [
     '../../_base_/models/edaformer.py',
     '../../_base_/datasets/coco-stuff164k.py',
     '../../_base_/default_runtime.py',
-    '../../_base_/schedules/schedule_80k_adamw.py'
+    '../../_base_/schedules/schedule_160k_adamw.py'
 ]
 
 # model settings

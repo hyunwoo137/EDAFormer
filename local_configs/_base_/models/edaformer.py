@@ -12,7 +12,6 @@ model = dict(
         type='EDAFormerHead',
         in_channels=[64, 128, 256],
         in_index=[1, 2, 3],
-        additional_pool_ratio=1,
         channels=128,
         dropout_ratio=0.1,
         num_classes=19,
