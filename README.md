@@ -23,6 +23,8 @@ cd EDAFormer && pip install -e . --user
 
 ## Evaluation
   
+Download [EDAFormer weights](https://drive.google.com/drive/u/0/folders/1hiAFQcfH9qd37WOc1_HMB0vKzbY-IWrO) into the `/path/to/checkpoint_file`.
+
 ```local_configs/``` contains config files. In config files, increase the ```reduction_ratios``` of our backbone and ```reduction_ratios``` of our decoder to apply our ISR method. 
 
 Example: evaluate ```EDAFormer-T``` on ```ADE20K```:
