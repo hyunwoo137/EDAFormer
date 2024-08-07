@@ -3,6 +3,7 @@
 
 This repository contains the official Pytorch implementation of training & evaluation code and the pretrained models for ISR method and EDAFormer. The paper is in [Here](https://arxiv.org/abs/2407.17261).
 
+![edaformer](https://github.com/user-attachments/assets/213ff08a-4cab-4028-bf0b-b2548ea2deea)
 
 ![isr_git](https://github.com/user-attachments/assets/ae1645d3-8d4c-40bb-b112-882f04b68f60)
 
