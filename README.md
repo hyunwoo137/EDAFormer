@@ -31,7 +31,7 @@ Example: Evaluate ```EDAFormer-T``` on ```ADE20K```:
 
 ```
 # Single-gpu testing
-CUDA_VISIBLE_DEVICES=0 python tools/test.py local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py /path/to/checkpoint_file
+CUDA_VISIBLE_DEVICES=0 python ./tools/test.py local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py /path/to/checkpoint_file
 
 # Multi-gpu testing
 CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_test.sh local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py /path/to/checkpoint_file <GPU_NUM>
@@ -46,7 +46,7 @@ Example: Train ```EDAFormer-T``` on ```ADE20K```:
 
 ```
 # Single-gpu training
-CUDA_VISIBLE_DEVICES=0 python tools/train.py local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py 
+CUDA_VISIBLE_DEVICES=0 python ./tools/train.py local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py 
 
 # Multi-gpu training
 CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_train.sh local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py <GPU_NUM>
