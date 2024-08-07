@@ -34,8 +34,8 @@ def parse_args():
         help='evaluation metrics, which depends on the dataset, e.g., "mIoU"'
         ' for generic datasets, and "cityscapes" for Cityscapes')
     parser.add_argument('--show', action='store_true', help='show results')
-    parser.add_argument('--backbone_reduction_ratios', default=[1,1,1,1], type=list, help='reduction ratios for backbone')
-    parser.add_argument('--decoder_reduction_ratios', default=[1,1,1], type=list, help='reduction ratios for decoder')
+    parser.add_argument('--backbone_reduction_ratios', default=None, type=list, help='reduction ratios for backbone')
+    parser.add_argument('--decoder_reduction_ratios', default=None, type=list, help='reduction ratios for decoder')
     parser.add_argument(
         '--show-dir', help='directory where painted images will be saved')
     parser.add_argument(
@@ -112,13 +112,13 @@ def main():
     cfg.model.pretrained = None
     cfg.data.test.test_mode = True
 
-    if 'EFT' in cfg.model.backbone.type:
+    if 'EFT' in cfg.model.backbone.type and args.backbone_reduction_ratios is not None:
         cfg.model.backbone.reduction_ratios[0] = int(args.backbone_reduction_ratios[0])
         cfg.model.backbone.reduction_ratios[1] = int(args.backbone_reduction_ratios[1])
         cfg.model.backbone.reduction_ratios[2] = int(args.backbone_reduction_ratios[2])
         cfg.model.backbone.reduction_ratios[3] = int(args.backbone_reduction_ratios[3])
 
-    if 'EDAFormer' in cfg.model.decode_head.type:
+    if 'EDAFormer' in cfg.model.decode_head.type and args.decoder_reduction_ratios is not None:
         cfg.model.decode_head.reduction_ratios[0] = int(args.decoder_reduction_ratios[0])
         cfg.model.decode_head.reduction_ratios[1] = int(args.decoder_reduction_ratios[1])
         cfg.model.decode_head.reduction_ratios[2] = int(args.decoder_reduction_ratios[2])
