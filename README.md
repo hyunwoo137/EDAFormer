@@ -27,27 +27,27 @@ Download [EDAFormer weights](https://drive.google.com/drive/u/0/folders/1hiAFQcf
 
 ```local_configs/``` contains config files. In config files, increase the ```reduction_ratios``` of our backbone and ```reduction_ratios``` of our decoder to apply our ISR method. 
 
-Example: evaluate ```EDAFormer-T``` on ```ADE20K```:
+Example: Evaluate ```EDAFormer-T``` on ```ADE20K```:
 
 ```
 # Single-gpu testing
-python tools/test.py local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py /path/to/checkpoint_file
+CUDA_VISIBLE_DEVICES=0 python tools/test.py local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py /path/to/checkpoint_file
 
 # Multi-gpu testing
-./tools/dist_test.sh local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py /path/to/checkpoint_file <GPU_NUM>
+CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_test.sh local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py /path/to/checkpoint_file <GPU_NUM>
 
 # Multi-gpu, multi-scale testing
-tools/dist_test.sh local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py /path/to/checkpoint_file <GPU_NUM> --aug-test
+CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_test.sh local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py /path/to/checkpoint_file <GPU_NUM> --aug-test
 ```
 
 ## Training
 
-Example: train ```EDAFormer-T``` on ```ADE20K```:
+Example: Train ```EDAFormer-T``` on ```ADE20K```:
 
 ```
 # Single-gpu training
-python tools/train.py local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py 
+CUDA_VISIBLE_DEVICES=0 python tools/train.py local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py 
 
 # Multi-gpu training
-./tools/dist_train.sh local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py <GPU_NUM>
+CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_train.sh local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py <GPU_NUM>
 ```
