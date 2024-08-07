@@ -25,19 +25,19 @@ cd EDAFormer && pip install -e . --user
   
 Download [EDAFormer weights](https://drive.google.com/drive/u/0/folders/1hiAFQcfH9qd37WOc1_HMB0vKzbY-IWrO) into the `/path/to/checkpoint_file`.
 
-```local_configs/``` contains config files. In config files, increase the ```reduction_ratios``` of our backbone and ```reduction_ratios``` of our decoder to apply our ISR method. 
+```local_configs/``` contains config files. To apply our ISR method, adjust ```--backbone_reduction_ratios``` and ```--decoder_reduction_ratios```.
 
-Example: Evaluate ```EDAFormer-T``` on ```ADE20K```:
+Example: Evaluate ```EDAFormer-T``` with ISR on ```ADE20K```:
 
 ```
 # Single-gpu testing
-CUDA_VISIBLE_DEVICES=0 python ./tools/test.py local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py /path/to/checkpoint_file
+CUDA_VISIBLE_DEVICES=0 python ./tools/test.py local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py /path/to/checkpoint_file --backbone_reduction_ratios "2211" --decoder_reduction_ratios "222"
 
 # Multi-gpu testing
-CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_test.sh local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py /path/to/checkpoint_file <GPU_NUM>
+CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_test.sh local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py /path/to/checkpoint_file <GPU_NUM> --backbone_reduction_ratios "2211" --decoder_reduction_ratios "222"
 
 # Multi-gpu, multi-scale testing
-CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_test.sh local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py /path/to/checkpoint_file <GPU_NUM> --aug-test
+CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_test.sh local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py /path/to/checkpoint_file <GPU_NUM> --aug-test --backbone_reduction_ratios "2211" --decoder_reduction_ratios "222"
 ```
 
 ## Training
