@@ -1,7 +1,7 @@
 # Embedding-Free Transformer with Inference Spatial Reduction for Efficient Semantic Segmentation (ECCV 2024)
+### 📄 [[Paper](https://arxiv.org/abs/2407.17261)]
 
-
-This repository contains the official Pytorch implementation of training & evaluation code and the pretrained models for ISR method and EDAFormer. The paper is in [Here](https://arxiv.org/abs/2407.17261).
+This repository contains the official Pytorch implementation of training & evaluation code and the pretrained models for ISR method and EDAFormer.
 
 ![edaformer](https://github.com/user-attachments/assets/213ff08a-4cab-4028-bf0b-b2548ea2deea)
 
