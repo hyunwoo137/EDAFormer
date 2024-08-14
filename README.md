@@ -1,5 +1,5 @@
-![Static Badge](https://img.shields.io/badge/project-page-green?link=https%3A%2F%2Fyubin1219.github.io%2Fedaformer%2F)
-![Static Badge](https://img.shields.io/badge/arXiv-2407.17261-C00000?link=https%3A%2F%2Farxiv.org%2Fabs%2F2407.17261)
+[![Project](https://img.shields.io/badge/Project-Page-green.svg)](https://yubin1219.github.io/edaformer/)
+[![Static Badge](https://img.shields.io/badge/arXiv-2407.17261-C00000.svg)](https://arxiv.org/abs/2407.17261)
 
 
 # Embedding-Free Transformer with Inference Spatial Reduction for Efficient Semantic Segmentation (ECCV 2024)
