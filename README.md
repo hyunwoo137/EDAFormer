@@ -1,5 +1,9 @@
+![Static Badge](https://img.shields.io/badge/project-page-green?link=https%3A%2F%2Fyubin1219.github.io%2Fedaformer%2F)
+![Static Badge](https://img.shields.io/badge/arXiv-2407.17261-C00000?link=https%3A%2F%2Farxiv.org%2Fabs%2F2407.17261)
+
+
 # Embedding-Free Transformer with Inference Spatial Reduction for Efficient Semantic Segmentation (ECCV 2024)
-### [[Project Page](https://yubin1219.github.io/edaformer/)]  📝[[Paper](https://arxiv.org/abs/2407.17261)]
+### 📃[[Project Page](https://yubin1219.github.io/edaformer/)]  📝[[Paper](https://arxiv.org/abs/2407.17261)] 🔍[[Model](https://drive.google.com/drive/u/0/folders/1hiAFQcfH9qd37WOc1_HMB0vKzbY-IWrO)]
 
 This repository contains the official Pytorch implementation of training & evaluation code and the pretrained models for ISR method and EDAFormer.
 
