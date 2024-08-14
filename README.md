@@ -1,5 +1,5 @@
 # Embedding-Free Transformer with Inference Spatial Reduction for Efficient Semantic Segmentation (ECCV 2024)
-### 📄 [[Paper](https://arxiv.org/abs/2407.17261)]
+### [[Project Page](https://yubin1219.github.io/edaformer/)]  📝[[Paper](https://arxiv.org/abs/2407.17261)]
 
 This repository contains the official Pytorch implementation of training & evaluation code and the pretrained models for ISR method and EDAFormer.
 
@@ -68,3 +68,15 @@ CUDA_VISIBLE_DEVICES=0 python ./tools/train.py local_configs/edaformer/tiny/edaf
 # Multi-gpu training
 CUDA_VISIBLE_DEVICES=0,1,2,3 bash ./tools/dist_train.sh local_configs/edaformer/tiny/edaformer.tiny.512x512.ade.160k.py <GPU_NUM>
 ```
+
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Citation</h2>
+      <pre><code>@article{yu2024embedding,
+  title={Embedding-Free Transformer with Inference Spatial Reduction for Efficient Semantic Segmentation},
+  author={Yu, Hyunwoo and Cho, Yubin and Kang, Beoungwoo and Moon, Seunghun and Kong, Kyeongbo and Kang, Suk-Ju},
+  journal={arXiv preprint arXiv:2407.17261},
+  year={2024}
+}</code></pre>
+    </div>
+</section>
