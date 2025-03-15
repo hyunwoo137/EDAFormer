@@ -3,7 +3,7 @@
 
 
 # Embedding-Free Transformer with Inference Spatial Reduction for Efficient Semantic Segmentation (ECCV 2024)
-### 📃[Project Page](https://yubin1219.github.io/edaformer/)  📝[Paper](https://arxiv.org/abs/2407.17261) ✏[Model](https://drive.google.com/drive/u/0/folders/1hiAFQcfH9qd37WOc1_HMB0vKzbY-IWrO)
+#### 📃[Project Page](https://yubin1219.github.io/edaformer/)  📝[Paper](https://arxiv.org/abs/2407.17261) ✏[Model](https://drive.google.com/drive/u/0/folders/1hiAFQcfH9qd37WOc1_HMB0vKzbY-IWrO)
 
 > #### Hyunwoo Yu<sup>1</sup>\*, Yubin Cho<sup>1,</sup><sup>2</sup>\*, Beoungwoo Kang<sup>1</sup>\*, Seunghun Moon<sup>1</sup>\*, Kyeongbo Kong<sup>3</sup>\*, Suk-ju Kang<sup>1&dagger;</sup>
 > \* Equal contribution, <sup>&dagger;</sup>Correspondence
